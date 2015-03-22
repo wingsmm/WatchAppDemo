@@ -52,6 +52,13 @@
             <objects>
                 <controller id="Xq2-2i-vlD" customClass="ChatController">
                     <items>
+                        <table alignment="left" id="7Jc-4D-1BY">
+                            <items>
+                                <tableRow id="iyl-ve-PZo">
+                                    <group key="rootItem" width="1" alignment="left" id="OxX-Pk-Mvh"/>
+                                </tableRow>
+                            </items>
+                        </table>
                         <group width="1" alignment="left" verticalAlignment="bottom" id="Ogx-Fw-pz0">
                             <items>
                                 <button width="0.5" alignment="left" verticalAlignment="center" title="Text" id="nSN-hb-ccM"/>
@@ -61,30 +68,22 @@
                                     </connections>
                                 </button>
                             </items>
-                            <variation key="default">
+                            <variation key="device=watch42mm">
                                 <mask key="items">
                                     <exclude reference="nSN-hb-ccM"/>
                                     <exclude reference="ydX-eD-sQm"/>
                                 </mask>
                             </variation>
-                            <variation key="device=watch42mm">
-                                <mask key="items">
-                                    <include reference="nSN-hb-ccM"/>
-                                    <include reference="ydX-eD-sQm"/>
-                                </mask>
-                            </variation>
                         </group>
                     </items>
-                    <variation key="default">
+                    <variation key="device=watch42mm">
                         <mask key="items">
                             <exclude reference="Ogx-Fw-pz0"/>
                         </mask>
                     </variation>
-                    <variation key="device=watch42mm">
-                        <mask key="items">
-                            <include reference="Ogx-Fw-pz0"/>
-                        </mask>
-                    </variation>
+                    <connections>
+                        <outlet property="table" destination="7Jc-4D-1BY" id="MNe-6J-0FQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="475.12820512820514" y="308.17948717948718"/>

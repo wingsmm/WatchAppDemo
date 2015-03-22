@@ -45,7 +45,7 @@
 
 - (void)loadData
 {
-    _chats = [@[@{@"id":@"1", @"avatar":@"http://tp3.sinaimg.cn/1657938842/180/5704612869/1", @"name":@"HeChen_1", @"count":@(81)}, @{@"id":@"2", @"avatar":@"http://tp3.sinaimg.cn/1657938842/180/5704612869/1", @"name":@"HeChen_2", @"count":@(49)}, @{@"id":@"3", @"avatar":@"http://tp3.sinaimg.cn/1657938842/180/5704612869/1", @"name":@"HeChen_3", @"count":@(1)}] mutableCopy];
+    _chats = [@[@{@"id":@"1", @"avatar":@"http://tp2.sinaimg.cn/1995450257/180/40080444093/0", @"name":@"小草姐", @"count":@(81)}, @{@"id":@"2", @"avatar":@"http://tp3.sinaimg.cn/1657938842/180/5704612869/1", @"name":@"李四", @"count":@(49)}, @{@"id":@"3", @"avatar":@"http://tp3.sinaimg.cn/1657938842/180/5704612869/1", @"name":@"王五", @"count":@(1)}] mutableCopy];
     // do some api to load chat data and then:
     [_table setNumberOfRows:_chats.count withRowType:@"Chat"];
     for (int i = 0; i < _table.numberOfRows; i++) {
@@ -57,10 +57,17 @@
         NSString *name = dic[@"name"];
         int count = [dic[@"count"] intValue];
         
-        [crc.avatarImage loadImageWithURLString:avatar placeholder:nil];
-//        [crc.avatarImage setImage:[UIImage imageNamed:@"head"] ];
+        if (i==0) {
+            [crc.avatarImage loadImageWithURLString:avatar placeholder:nil];
+        }else if(i==1){
+            [crc.avatarImage setImage:[UIImage imageNamed:@"1"] ];
+        }else{
+
+        }
+        
+        
         [crc.nameLabel setText:name];
-        [crc.unreadLabel setText:[NSString stringWithFormat:@"%d unread", count]];
+        [crc.unreadLabel setText:[NSString stringWithFormat:@"%d 未读", count]];
     }
     
     
