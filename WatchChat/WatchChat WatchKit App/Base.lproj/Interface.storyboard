@@ -12,7 +12,7 @@
                     <items>
                         <table alignment="left" id="GTq-lX-aWJ">
                             <items>
-                                <tableRow id="xg5-dZ-roT">
+                                <tableRow identifier="Chat" id="xg5-dZ-roT" customClass="ChatRowModel">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="3Ah-9k-PGz">
                                         <items>
                                             <group alignment="left" verticalAlignment="center" layout="vertical" radius="20" id="gYr-FV-6bP">
@@ -27,14 +27,90 @@
                                                 </items>
                                             </group>
                                         </items>
+                                        <connections>
+                                            <segue destination="Xq2-2i-vlD" kind="push" id="BK1-dR-Ywa"/>
+                                        </connections>
                                     </group>
+                                    <connections>
+                                        <outlet property="avatarImage" destination="F9k-PH-s36" id="m7A-7p-mFT"/>
+                                        <outlet property="nameLabel" destination="neK-BK-z7z" id="S1T-6X-Lok"/>
+                                        <outlet property="unreadLabel" destination="vka-B4-1ri" id="rfc-6f-gsz"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="GTq-lX-aWJ" id="VIi-JG-s74"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="233" y="309"/>
+        </scene>
+        <!--Chat Controller-->
+        <scene sceneID="NdF-gx-2I3">
+            <objects>
+                <controller id="Xq2-2i-vlD" customClass="ChatController">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="Ogx-Fw-pz0">
+                            <items>
+                                <button width="0.5" alignment="left" verticalAlignment="center" title="Text" id="nSN-hb-ccM"/>
+                                <button width="0.5" alignment="left" verticalAlignment="center" title="Voice" id="ydX-eD-sQm">
+                                    <connections>
+                                        <segue destination="w6U-eo-6yl" kind="modal" id="aRP-zs-255"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="nSN-hb-ccM"/>
+                                    <exclude reference="ydX-eD-sQm"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="nSN-hb-ccM"/>
+                                    <include reference="ydX-eD-sQm"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="Ogx-Fw-pz0"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="Ogx-Fw-pz0"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="475.12820512820514" y="308.17948717948718"/>
+        </scene>
+        <!--Recorder-->
+        <scene sceneID="5q4-Bz-d10">
+            <objects>
+                <controller identifier="Recorder" id="w6U-eo-6yl" customClass="RecordController">
+                    <items>
+                        <button alignment="center" verticalAlignment="center" id="SFu-dF-XDr">
+                            <group key="contentGroup" width="1" height="1" alignment="left" layout="vertical" id="4B6-z1-UiA">
+                                <items>
+                                    <imageView width="0.80000000000000004" height="0.80000000000000004" alignment="center" image="ring0" id="FCw-hu-gG0"/>
+                                    <label alignment="center" text="status" id="wt8-Kk-WHH"/>
+                                </items>
+                            </group>
+                        </button>
+                    </items>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <exclude reference="SFu-dF-XDr"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="564" y="617"/>
         </scene>
     </scenes>
 </document>

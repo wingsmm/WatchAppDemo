@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <WatchKit/WatchKit.h>
+
 
 @interface ChatRowModel : NSObject
+
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *avatarImage;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *nameLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *unreadLabel;
 
 @end

@@ -24,6 +24,7 @@
 		1AD974031ABEF407009D4A2D /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD974021ABEF407009D4A2D /* ChatController.m */; };
 		1AD974061ABEF494009D4A2D /* MessageRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD974051ABEF494009D4A2D /* MessageRowModel.m */; };
 		1AD974091ABEF4C6009D4A2D /* RecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD974081ABEF4C6009D4A2D /* RecordController.m */; };
+		1AD9740E1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD9740D1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		1AD974051ABEF494009D4A2D /* MessageRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageRowModel.m; sourceTree = "<group>"; };
 		1AD974071ABEF4C6009D4A2D /* RecordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordController.h; sourceTree = "<group>"; };
 		1AD974081ABEF4C6009D4A2D /* RecordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordController.m; sourceTree = "<group>"; };
+		1AD9740C1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKInterfaceImage+ParentLoad.h"; sourceTree = "<group>"; };
+		1AD9740D1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKInterfaceImage+ParentLoad.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,12 +194,6 @@
 			children = (
 				1AD9740B1ABEF53C009D4A2D /* Controller */,
 				1AD9740A1ABEF528009D4A2D /* Model */,
-				1AD973DB1ABEECEC009D4A2D /* InterfaceController.h */,
-				1AD973DC1ABEECEC009D4A2D /* InterfaceController.m */,
-				1AD974011ABEF407009D4A2D /* ChatController.h */,
-				1AD974021ABEF407009D4A2D /* ChatController.m */,
-				1AD974071ABEF4C6009D4A2D /* RecordController.h */,
-				1AD974081ABEF4C6009D4A2D /* RecordController.m */,
 				1AD973E41ABEECEC009D4A2D /* Images.xcassets */,
 				1AD973D81ABEECEC009D4A2D /* Supporting Files */,
 			);
@@ -237,6 +234,8 @@
 				1AD974051ABEF494009D4A2D /* MessageRowModel.m */,
 				1AD973FE1ABEF3C8009D4A2D /* ChatRowModel.h */,
 				1AD973FF1ABEF3C8009D4A2D /* ChatRowModel.m */,
+				1AD9740C1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.h */,
+				1AD9740D1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -244,6 +243,12 @@
 		1AD9740B1ABEF53C009D4A2D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1AD973DB1ABEECEC009D4A2D /* InterfaceController.h */,
+				1AD973DC1ABEECEC009D4A2D /* InterfaceController.m */,
+				1AD974011ABEF407009D4A2D /* ChatController.h */,
+				1AD974021ABEF407009D4A2D /* ChatController.m */,
+				1AD974071ABEF4C6009D4A2D /* RecordController.h */,
+				1AD974081ABEF4C6009D4A2D /* RecordController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				1AD974031ABEF407009D4A2D /* ChatController.m in Sources */,
 				1AD974001ABEF3C8009D4A2D /* ChatRowModel.m in Sources */,
 				1AD974061ABEF494009D4A2D /* MessageRowModel.m in Sources */,
+				1AD9740E1ABEFA93009D4A2D /* WKInterfaceImage+ParentLoad.m in Sources */,
 				1AD974091ABEF4C6009D4A2D /* RecordController.m in Sources */,
 				1AD973DD1ABEECEC009D4A2D /* InterfaceController.m in Sources */,
 			);
